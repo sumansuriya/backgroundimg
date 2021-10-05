@@ -19,6 +19,7 @@ import { CustomerBugList } from "./components/CustomerBugList";
 import { BugReport } from "./components/BugReport";
 import { BugSolution } from "./components/BugSolution";
 import { BugAssign } from "./components/BugAssign";
+import { AdminWelcome } from "./components/AdminWelcome";
 function App() {
   const history = useHistory();
   const state = useSelector((state) => state);
@@ -47,6 +48,7 @@ function App() {
       <Route exact path="/bug-report" component={BugReport} />
       <Route exact path="/bug-solution" component={BugSolution} />
       <Route exact path="/bug-assign" component={BugAssign} />
+      <Route exact path="/admin-welcome" component={AdminWelcome} />
 
 
       </>
